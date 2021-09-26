@@ -1,0 +1,39 @@
+.header{
+    background-image: url("https://nacsimento.github.io/lannding-page/images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    width: 100%;
+    text-align: center;
+
+    @include breakpoint-up(medium){
+        background-image: url("https://nacsimento.github.io/lannding-page/images/bg-header-desktop.png");
+    }
+
+   
+    &__text{
+        
+            margin-bottom:3.125rem ;
+            margin-top:4.375rem ;
+        p{
+            @include breakpoint-up(medium){
+                width: 49%;
+                margin: 0 auto;
+            }
+        }
+
+        
+    }
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        gap: 1.4375rem;
+        align-items: center;
+
+        @include breakpoint-up(medium){
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

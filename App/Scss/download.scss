@@ -1,0 +1,29 @@
+.download{
+    text-align: center;
+    
+    margin-top: 183px;
+    margin-bottom: 183px;
+
+    &__text{
+        margin-bottom:3.125rem ;
+
+        p{
+            @include breakpoint-up(large){
+                margin: 0 auto;
+                width: 58%;
+            }
+        }
+    }
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        gap: 1.4375rem;
+        align-items: center;
+
+        @include breakpoint-up(medium){
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

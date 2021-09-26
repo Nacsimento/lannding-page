@@ -1,0 +1,37 @@
+.hero2{
+    margin-top: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @include breakpoint-up(large){
+        gap: 120px;
+    }
+    &__text{
+
+        P{
+            @include breakpoint-up(large){
+                margin: 0 auto;
+                width: 72%;
+            }
+        }
+    }
+
+    &__image{
+        background-image: url("https://nacsimento.github.io/lannding-page/images/image-devices.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -15px center;
+        height: 214px;
+        width: 303px;
+
+        @include breakpoint-up(large){
+            height:500px ;
+            width: 820px;
+        }
+    }
+
+}

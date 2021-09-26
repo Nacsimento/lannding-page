@@ -1,0 +1,16 @@
+.partners{
+    margin-top: 138px;
+    &__row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 78px;
+
+        @include breakpoint-up(large){
+            flex-direction: row;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+    }
+}

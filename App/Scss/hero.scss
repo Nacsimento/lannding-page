@@ -1,0 +1,89 @@
+.hero{
+    text-align: center;
+    padding-left:2.0625rem ;
+    padding-right: 2.0625rem;
+
+    &__text{
+        margin-bottom: 4.375rem;
+
+        p{
+            @include breakpoint-up(medium){
+                width: 42%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__row{
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        @include breakpoint-up(large){
+            flex-direction: row;
+            width: 100%;
+            
+            
+            
+        }
+    }
+
+    &__image{
+        
+        img{ 
+            height:235px ;
+            width: 309px;
+
+            @include breakpoint-up(large){
+                height: 805.29px;
+                width: 1010.59px;
+                margin-left: -264px;
+                
+        }
+      
+
+        ;
+            
+            
+            
+            
+
+        }
+    }
+
+    &__col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.75rem;
+
+        @include breakpoint-up(large){
+            align-items: flex-start;
+            text-align: left;
+            padding-left: 50px;
+            padding-bottom: 115px;
+           
+            
+            
+        }
+    }
+
+    &__title{
+        color:$darkGrayishBlue ;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        
+    }
+
+    &__description{
+
+        @include breakpoint-up(large){
+            width: 70%;
+        }
+        
+    }
+}
